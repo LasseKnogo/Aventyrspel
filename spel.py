@@ -1,3 +1,6 @@
+import random as rand
+
+
 def main():
 
     alive = True
@@ -10,6 +13,33 @@ def main():
         svar = input("Vad vill du göra [d], [i], [s], [h] -->")
         if hp == 0:
             alive = False
+
+        if svar == "d":
+            door = input("Vilken dörr vill du ta [l], [m], [r] ")
+            if door == "l":
+                slumptal = rand.randint(1, 3)
+                if slumptal == 1:
+                    print("Du hittar en kista")
+                elif slumptal == 2:
+                    print("Du hittar en läskig kille")
+                else:
+                    print("Du gick in i en fälla")
+            if door == "m":
+                slumptal = rand.randint(1, 3)
+                if slumptal == 1:
+                    print("Du hittar en kista")
+                elif slumptal == 2:
+                    print("Du hittar en läskig kille")
+                else:
+                    print("Du gick in i en fälla")
+            if door == "r":
+                slumptal = rand.randint(1, 3)
+                if slumptal == 1:
+                    print("Du hittar en kista")
+                elif slumptal == 2:
+                    print("Du hittar en läskig kille")
+                else:
+                    print("Du gick in i en fälla")
 
         if svar == "i":
             print(f" Du har {potion} Healing Pottor")
