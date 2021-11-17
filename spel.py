@@ -5,13 +5,14 @@ def main():
 
     alive = True
     svar = ""
-    hp = 100
+    HP = 100
     level = 1
+    AP = 100
     potion = 1
 
     while alive:
         svar = input("Vad vill du göra [d], [i], [s], [h] -->")
-        if hp == 0:
+        if HP == 0:
             alive = False
 
         if svar == "d":
@@ -45,7 +46,8 @@ def main():
             print(f" Du har {potion} Healing Pottor")
 
         if svar == "s":
-            print(f"HP:{hp}")
+            print(f"HP:{HP}")
+            print(f"AP:{AP}")
             print(f"Level:{level}")
 
         if svar == "h":
@@ -54,7 +56,7 @@ def main():
             else:
                 print("Du har tar en Healing Potta")
                 potion = potion - 1
-                hp = hp + 10
+                HP = HP + 10
 
 
 main()
