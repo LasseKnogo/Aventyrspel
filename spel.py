@@ -16,13 +16,13 @@ def main():
 
         if svar == "s":
             print(f"HP:{hp}")
-            print(f"Level:{level}\n")
+            print(f"Level:{level}")
 
         if svar == "h":
             if potion == 0:
                 print("Du har inga pottor kvar")
             else:
-                print("Du har tar en Healing Potta\n")
+                print("Du har tar en Healing Potta")
                 potion = potion - 1
                 hp = hp + 10
 
