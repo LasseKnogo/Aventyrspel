@@ -31,6 +31,71 @@ def main():
                 slumptal = rand.randint(1, 3)
                 if slumptal == 1:
                     print("Du hittar en kista")
+                    kistslump = rand.randint(1, 3)
+                    if kistslump == 1:
+                        if character == "warrior":
+                            svardslump = rand.randint(1, 10)
+                            if svardslump < 6:
+
+                                print(
+                                    "Du hittade ett vanligt svärd, din skada ökar med 5!")
+                                damage = damage + 5
+                                weapon = "Vanligt svärd"
+                            elif svardslump < 9:
+
+                                print(
+                                    "Du hitta ett sällsynt svärd, din skada ökar med 15!")
+                                damage = damage + 15
+                                weapon = "Sällsynt svärd"
+                            else:
+
+                                print(
+                                    "Du hittade ett mytiskt svärd, din skada ökar med 25!")
+                                damage = damage + 25
+                                weapon = "Mytiskt svärd"
+                    elif character == "ranger":
+                        bågslump = rand.randint(1, 10)
+                        if bågslump < 6:
+
+                            print(
+                                "Du hittade en vanlig pilbåge, din damage ökar med 10!")
+                            damage = damage + 10
+                            weapon = "Vanlig pilbåge"
+                        elif bågslump < 9:
+
+                            print(
+                                "du hittade en sällsynt pilbåge, din damage ökar med 20!")
+                            damage = damage + 20
+                            weapon = "Sällsynt pilbåge"
+                        else:
+
+                            print(
+                                "Du hittade en mytisk pilbåge, din damage ökar med 40!")
+                            damaga = damaga + 40
+                            weapon = "Mytisk pilbåge"
+                    elif kistslump == 2:
+
+                        print("Du hittade en halväten burk ravioli")
+                        input("Vill du äta raviolin? [Ja], [Nej]")
+                    elif kistslump == 3:
+
+                        print("Du hittade en bit utrustning")
+                        klädslump = rand.randint(1, 10)
+                        if klädslump < 6:
+
+                            print(
+                                "du hittade en vanlig bit utrustning, din hp ökar med 10!")
+                            hp = hp + 10
+                        elif klädslump < 9:
+
+                            print(
+                                "du hittade en sällsynt bit utrustning, din hp ökar med 20!")
+                            hp = hp + 20
+                        else:
+
+                            print(
+                                "du hittade en ett mytisk bit utrustning, din damage ökar med 40!")
+                            hp = hp + 40
                 elif slumptal == 2:
                     monsterslump = rand.randint(1, 3)
                     if monsterslump == 1:
@@ -71,18 +136,67 @@ def main():
                     print("Du hittar en kista")
                     kistslump = rand.randint(1, 3)
                     if kistslump == 1:
-                        print("Du hittade ett vapen")
-                        svardslump = rand.randint(1, 10)
-                        if svardslump < 6:
+                        if character == "warrior":
+                            svardslump = rand.randint(1, 10)
+                            if svardslump < 6:
 
-                            print("Du hittade ett vanlig svärd")
-                        elif svardslump < 9:
+                                print(
+                                    "Du hittade ett vanligt svärd, din damage ökar med 5!")
+                                damage = damage + 5
+                                weapon = "Vanligt svärd"
+                            elif svardslump < 9:
 
-                            print("Du hitta ett sällsynt svärd")
+                                print(
+                                    "Du hitta ett sällsynt svärd, din damage ökar med 15!")
+                                damage = damage + 15
+                                weapon = "Sällsynt svärd"
+                            else:
+
+                                print(
+                                    "Du hittade ett mytiskt svärd, din damage ökar med 25!")
+                                damage = damage + 25
+                                weapon = "Mytiskt svärd"
+                    elif character == "ranger":
+                        bågslump = rand.randint(1, 10)
+                        if bågslump < 6:
+
+                            print(
+                                "Du hittade en vanlig pilbåge, din damage ökar med 10!")
+                            damage = damage + 10
+                            weapon = "Vanlig pilbåge"
+                        elif bågslump < 9:
+
+                            print(
+                                "du hittade en sällsynt pilbåge, din damage ökar med 20!")
+                            damage = damage + 20
+                            weapon = "Sällsynt pilbåge"
                         else:
 
-                            print("Du hittade ett mytiskt svärd")
+                            print(
+                                "Du hittade en mytisk pilbåge, din damage ökar med 40!")
+                            damage = damage + 40
+                            weapon = "Mytisk pilbåge"
+                    elif kistslump == 2:
+                        print("du hittade en halväten burk ravioli")
+                        input("Vill du äta raviolin? [Ja], [Nej]")
+                    elif kistslump == 3:
+                        print("Du hittade en bit utrustning")
+                        klädslump = rand.randint(1, 10)
+                        if klädslump < 6:
 
+                            print(
+                                "du hittade en vanlig bit utrusting, din hp ökar med 10!")
+                            hp = hp + 10
+                        elif klädslump < 9:
+
+                            print(
+                                "du hittade en sällsynt bit utrustning, din hp ökar med 20!")
+                            hp = hp + 20
+                        else:
+
+                            print(
+                                "du hittade en ett mytisk bit utrustning, din hp ökar med 40!")
+                            hp = hp + 40
                 elif slumptal == 2:
                     monsterslump = rand.randint(1, 3)
                     if monsterslump == 1:
@@ -121,6 +235,71 @@ def main():
                 slumptal = rand.randint(1, 3)
                 if slumptal == 1:
                     print("Du hittar en kista")
+                    kistslump = rand.randint(1, 3)
+                    if kistslump == 1:
+                        if character == "warrior":
+                            svardslump = rand.randint(1, 10)
+                            if svardslump < 6:
+
+                                print(
+                                    "Du hittade ett vanlig svärd, din damage ökar med 5!")
+                                damage = damage + 5
+                                weapon = "Vanligt svärd"
+                            elif svardslump < 9:
+
+                                print(
+                                    "Du hitta ett sällsynt svärd, din damage ökar med 15!")
+                                damage = damage + 15
+                                weapon = "Sällsynt svärd"
+                            else:
+
+                                print(
+                                    "Du hittade ett mytiskt svärd, din damage ökar med 25!")
+                                damage = damage + 25
+                                weapon = "Mytiskt svärd"
+                    elif character == "ranger":
+                        bågslump = rand.randint(1, 10)
+                        if bågslump < 6:
+
+                            print(
+                                "Du hittade en vanlig pilbåge din, damage ökar med 10!")
+                            damage = damage + 10
+                            weapon = "Vanlig pilbåge"
+                        elif bågslump < 9:
+
+                            print(
+                                "du hittade en sällsynt pilbåge, din damage ökar med 15!")
+                            damage = damage + 15
+                            weapon = "Sällsynt pilbåge"
+                        else:
+
+                            print(
+                                "Du hittade en mytisk pilbåge, din damage ökar med 40!")
+                            damage = damage + 40
+                            weapon = "Mytisk pilbåge"
+                    elif kistslump == 2:
+
+                        print("Du hittade en halväten burk ravioli")
+                        input("Vill du äta raviolin? [Ja] [Nej]")
+                    elif kistslump == 3:
+
+                        print("Du hittade en bit utrustning")
+                        klädslump = rand.randint(1, 10)
+                        if klädslump < 6:
+
+                            print(
+                                "Du hittade en vanlig bit utrustning, din hp ökar med 10!")
+                            hp = hp + 10
+                        elif klädslump < 9:
+
+                            print(
+                                "du hittade en sällsynt bit utrustning, din hp ökar med 20!")
+                            hp = hp + 20
+                        else:
+
+                            print(
+                                "du hittade en ett mytisk bit utrustning, din hp ökar med 40!")
+                            hp = hp + 40
                 elif slumptal == 2:
                     monsterslump = rand.randint(1, 3)
                     if monsterslump == 1:
@@ -166,6 +345,7 @@ def main():
             print(f"HP:{hp}")
             print(f"damage:{damage}")
             print(f"Level:{level}")
+            print(f"Klass:{character}")
 
         if svar == "h":
             if potion == 0:
@@ -176,4 +356,4 @@ def main():
                 hp = hp + 60
 
 
-main()
+main()i
