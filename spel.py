@@ -30,8 +30,8 @@ def main():
             if door == "l":
                 slumptal = rand.randint(1, 3)
                 if slumptal == 1:
-                    print("Du hittar en kista")
                     kistslump = rand.randint(1, 3)
+                    print("Du hittar en kista")
                     if kistslump == 1:
                         if character == "warrior":
                             svardslump = rand.randint(1, 10)
@@ -133,8 +133,8 @@ def main():
             if door == "m":
                 slumptal = rand.randint(1, 3)
                 if slumptal == 1:
-                    print("Du hittar en kista")
                     kistslump = rand.randint(1, 3)
+                    print("Du hittar en kista")
                     if kistslump == 1:
                         if character == "warrior":
                             svardslump = rand.randint(1, 10)
@@ -234,8 +234,8 @@ def main():
             if door == "r":
                 slumptal = rand.randint(1, 3)
                 if slumptal == 1:
-                    print("Du hittar en kista")
                     kistslump = rand.randint(1, 3)
+                    print("Du hittar en kista")
                     if kistslump == 1:
                         if character == "warrior":
                             svardslump = rand.randint(1, 10)
