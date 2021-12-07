@@ -89,7 +89,7 @@ def main():
                                 hp = hp + 30
                     elif kistslump == 3:
 
-                        print("Du hittade en bit utrustnings")
+                        print("Du hittade en bit utrustning")
                         klädslump = rand.randint(1, 10)
                         if klädslump < 6:
 
