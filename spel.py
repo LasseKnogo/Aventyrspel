@@ -76,7 +76,17 @@ def main():
                     elif kistslump == 2:
 
                         print("Du hittade en halväten burk ravioli")
-                        input("Vill du äta raviolin? [Ja], [Nej]")
+                        svar = input("Vill du äta raviolin? Ja[ja], Nej[nej]")
+                        if svar == "j":
+                            raviolislump = rand.randint(1, 2)
+                            if raviolislump == 1:
+                                print(
+                                    "Du äter raviolin och känner en konstig smak, din hp minskar med 30")
+                                hp = hp - 30
+                            elif raviolislump == 2:
+                                print(
+                                    "Du äter ravilolin, den smakar udda men du känner dig mättad, din hp ökar med 30")
+                                hp = hp + 30
                     elif kistslump == 3:
 
                         print("Du hittade en bit utrustnings")
@@ -178,7 +188,18 @@ def main():
                             weapon = "Mytisk pilbåge"
                     elif kistslump == 2:
                         print("du hittade en halväten burk ravioli")
-                        input("Vill du äta raviolin? [Ja], [Nej]")
+                        svar = input("Vill du äta raviolin? Ja[ja], Nej[nej]")
+                        if svar == "j":
+                            raviolislump = rand.randint(1, 2)
+                        if raviolislump == 1:
+                            print(
+                                "Du äter raviolin och känner en konstig smak, din hp minskar med 30")
+                            hp = hp - 30
+                        elif raviolislump == 2:
+                            print(
+                                "Du äter ravilolin, den smakar udda men du känner dig mättad, din hp ökar med 30")
+                            hp = hp + 30
+
                     elif kistslump == 3:
                         print("Du hittade en bit utrustning")
                         klädslump = rand.randint(1, 10)
@@ -280,7 +301,21 @@ def main():
                     elif kistslump == 2:
 
                         print("Du hittade en halväten burk ravioli")
-                        input("Vill du äta raviolin? [Ja] [Nej]")
+                        svar = input("Vill du äta raviolin? Ja[ja] Nej[nej]")
+
+                        if svar == "ja":
+                            raviolislump = rand.randint(1, 2)
+
+                            print(raviolislump)
+                            if raviolislump == 1:
+                                print(
+                                    "Du äter raviolin och känner en konstig smak, din hp minskar med 30")
+                                hp = hp - 30
+                            elif raviolislump == 2:
+                                hp = hp + 30
+                                print(
+                                    "Du äter ravilolin, den smakar udda men du känner dig mättad, din hp ökar med 30")
+
                     elif kistslump == 3:
 
                         print("Du hittade en bit utrustning")
