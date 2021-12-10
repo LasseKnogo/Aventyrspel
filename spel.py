@@ -22,8 +22,8 @@ class items():
         self.stats = stats
 
 
-ranger = player("Ranger", "80", "60", 1, "en simpel pilbåge")
-warrior = player("Warrior", "100", "40", 1, "ett simpelt svärd")
+ranger = player("Ranger", 80, 60, 1, "en simpel pilbåge")
+warrior = player("Warrior", 100, 40, 1, "ett simpelt svärd")
 
 monster1 = monster("Groda", 100)
 monster2 = monster("Stenbumling", 150)
