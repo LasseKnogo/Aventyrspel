@@ -1,6 +1,21 @@
 import random as rand
 
 
+class player():
+    def __init__(self, klass, hp, damage, level, item):
+        self.klass = klass
+        self.hp = hp
+        self.damage = damage
+        self.level = level
+        self.item = item
+
+
+class monster():
+    def __init__(self, name, health):
+        self.name = name
+        self.health = health
+
+
 def main():
     character = ""
     alive = True
