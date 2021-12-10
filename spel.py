@@ -16,6 +16,27 @@ class monster():
         self.health = health
 
 
+class items():
+    def __init__(self, name, stats):
+        self.name = name
+        self.stats = stats
+
+
+ranger = player("Ranger", "80", "60", 1, "en simpel pilbåge")
+warrior = player("Warrior", "100", "40", 1, "ett simpelt svärd")
+
+monster1 = monster("Groda", 100)
+monster2 = monster("Stenbumling", 150)
+monster3 = monster("Drake", 200)
+
+bow1 = items("en vanlig pilbåge", 10)
+bow2 = items("en sällsynt pilbåge", 20)
+bow3 = items("en mytisk pilbåge", 40)
+sword1 = items("ett vanligt svär", 5)
+sword2 = items("ett sällsynt svärd", 15)
+sword3 = items("ett mytiskt svärd", 25)
+
+
 def main():
     character = ""
     alive = True
